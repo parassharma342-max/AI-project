@@ -77,6 +77,33 @@ Features:
 * Decision Tree Classifier
 * Recommendation Ranking Model
 
+## AI model code
+import pandas as pd
+from sklearn.cluster import KMeans
+
+# Load dataset
+data = pd.read_csv("../dataset/user_behavior.csv")
+
+# Features
+X = data[['session_duration','clicks','pages_viewed','previous_interactions']]
+
+# Train clustering model
+model = KMeans(n_clusters=3, random_state=42)
+data['cluster'] = model.fit_predict(X)
+
+# Personalization logic
+def recommend(cluster):
+    if cluster == 0:
+        return "High engagement - show premium content"
+    elif cluster == 1:
+        return "Medium engagement - show recommendations"
+    else:
+        return "Low engagement - send notifications"
+
+data['recommendation'] = data['cluster'].apply(recommend)
+
+print(data)
+
 ## Project Architecture
 
 User Interaction → Data Collection → AI Model → Recommendation Engine → Personalized UI
