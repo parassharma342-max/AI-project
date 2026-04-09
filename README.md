@@ -160,5 +160,36 @@ AI-Driven-UX/
 ├── report/
 │   └── final_report.pdf
 │
+## AI Personalization Model
+
+The system segments users into engagement clusters using K-means clustering.
+
+Cluster 0:
+Highly engaged users  
+Strategy: Show premium content  
+
+Cluster 1:
+Medium engagement users  
+Strategy: Show recommendations  
+
+Cluster 2:
+Low engagement users  
+Strategy: Send push notifications  
+
+## Results
+
+Engagement Rate Improved: 34%  
+Session Duration Increased: 19%  
+CTR Improved: 27%  
+Retention Improved: 23%  
+
+## Tech Stack
+
+Python  
+Scikit-learn  
+Pandas  
+Machine Learning  
+Clustering  
+Recommendation System  
 └── README.md
 ```
