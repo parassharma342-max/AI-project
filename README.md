@@ -50,6 +50,15 @@ Features:
 * category_preference
 * previous_interactions
 * engagement_score
+* user_id,session_duration,clicks,pages_viewed,previous_interactions,engagement_score
+1,120,10,5,3,0.75
+2,80,6,3,2,0.55
+3,200,15,8,5,0.90
+4,60,4,2,1,0.40
+5,150,12,6,4,0.82
+6,95,7,4,2,0.60
+7,170,14,7,5,0.88
+8,50,3,2,1,0.35
 
 ## Methodology
 
